@@ -1,5 +1,4 @@
-# output.tf
-
-output "server" {
-  value = "${random_pet.server.id}"
+output "approle_role_id" {
+  value = vault_approle_auth_backend_role.example_role.role_id
 }
+
